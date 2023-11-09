@@ -1,0 +1,56 @@
+/* Secondary colors
+#a18268
+#cfcfbc */
+
+:root {
+    --color-accent-light: #819b57; 
+    --color-accent-dark: #465929;  
+    --color-primary-light: #faf4ea;
+    --color-primary-dark:  #31261a;
+}
+
+    /* BASE */
+body {
+    color: var(--color-primary-dark);
+}
+ul {
+    list-style-type: none;
+}
+
+    /* HEADER */
+.button {
+    color: var(--color-primary-light);
+    border-radius: 8px;
+    border: 2px solid var(--color-accent-light);
+    background: var(--color-accent-light);
+    padding: 16px 32px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: transparent;
+    color: var(--color-accent-dark);
+}
+.link {
+    color: var(--color-primary-light);
+}
+.link:hover {
+    color: var(--color-accent-light);
+}
+
+    /* HERO */
+.hero_title {
+    color: var(--color-primary-light);
+}
+.hero_title .accent {
+    color: var(--color-accent-light);
+}
+
+    /* TRADITIONS */
+.traditions_list {
+    color: var(--color-primary-light);
+    background-color: var(--color-accent-light);
+}
+
+.section_title .accent {
+    color: var(--color-accent-dark);
+}

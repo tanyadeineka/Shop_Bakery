@@ -92,6 +92,10 @@ address {
     /* HERO */
 .hero-section {
     padding: 272px 0;
+    background-image: url('../images/hero-section-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .hero-title {
     color: var(--color-primary-light);

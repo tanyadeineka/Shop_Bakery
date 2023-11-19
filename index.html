@@ -59,10 +59,11 @@
         </section>
         <section class="section" id="chefs-section">
             <div class="container">
-                <h2 class="chefs-title section-title">Наші найкращі <span class="accent">шеф -кухарі</span></h2>
+                <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
                 <ul>
                     <li>
                         <article>
+                            <img class="chef-photo" src="./images/nastya-chef.jpg" alt="Nastya chef">
                             <h3 class="chef-title">Настя</h3>
                             <p>Привіт, я Настя!</p>
                             <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -71,6 +72,7 @@
                     </li>
                     <li>
                         <article>
+                            <img class="chef-photo" src="./images/vlad-chef.jpg" alt="Vlad chef">
                             <h3 class="chef-title">Влад</h3>
                             <p>Привіт, я Влад!</p>
                             <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
@@ -82,7 +84,12 @@
         </section>
         <section class="section" id="formats-section">
             <div class="container">
-                <h2 class="formats-title section-title">Формати</h2>
+                <h2 class="formats-title section-title centered">Формати</h2>
+                <button class="carousel-button" type="button">
+                    <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
                 <ul class="formats-list">
                     <li class="formats-item">
                         <article class="format-card">
@@ -118,6 +125,11 @@
                         </article>
                     </li>
                 </ul>
+                <button class="carousel-button" type="button">
+                    <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
             </div>    
         </section>
         <section class="section" id="contact-section">
@@ -129,7 +141,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
             <nav>
                 <a href="./index.html">
@@ -147,8 +159,16 @@
                     <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
                     <li><a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
                     <li><a class="address-link" href="https://maps.app.goo.gl/SvD66bGZupn16T4t5" target="_blank">Україна, м. Київ, вул. Січових Стрільців 54</a></li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
+                    <li><a href="#">
+                        <svg class="address-icon" width="32" height="32">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg class="address-icon" width="32" height="32">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a></li>
                 </ul>
                 <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
                 <p class="">&copy; 2023 Дані захищені</p>

@@ -8,7 +8,9 @@
 }
 
     /* BASE */
-* {
+*, 
+*::after, 
+*::before {
     box-sizing: border-box;
 }
 body {
@@ -27,6 +29,9 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+a {
+    display: inline-block;
 }
 address {
     font-style: normal;
@@ -170,6 +175,18 @@ address {
     border: 2px solid var(--color-accent-light);
     content: '';
 }
+.chefs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
 .chef-photo {
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light),
@@ -180,14 +197,21 @@ address {
     font-weight: 600;
     margin-bottom: 16px;
 }
+.chef-text {
+    margin-bottom: 24px;
+}
+.chef-text p:last-child{
+    margin-bottom: 0;
+}
 
     /* FORMATS */
 .formats-title {
     margin-bottom: 80px;
 }
-.format-title {
-    font-size: 24px;
-    font-weight: 600;
+.formats-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 .formats-list {
     display: flex;
@@ -207,6 +231,10 @@ address {
     var(--color-primary-dark) 100%
   );
 }
+.format-title {
+    font-size: 24px;
+    font-weight: 600;
+}
 .format-text {
     font-size: 14px;
     font-weight: 300;
@@ -215,6 +243,7 @@ address {
     /* CAROUSEL */
 .carousel-button{
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -231,17 +260,45 @@ address {
 }
 
     /* CONTACT */
+.contact-section {
+    padding-bottom: 96px;
+}
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
 .contact-title {
     margin-bottom: 16px;
+}
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
 }
 
     /* FOOTER */
 .footer {
+    padding: 32px 0;
     background-color: var(--color-primary-dark);
     background-image: url('../images/footer-background.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+.footer-nav, .footer-address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+.footer-logo, .footer-menu {
+    flex-grow: 1;
+}
+.address-list, .address-info {
+    flex-grow: 1;
 }
 .address-link {
     color: var(--color-primary-light);

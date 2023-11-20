@@ -1,4 +1,8 @@
 .format-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 444px;
     border-radius: 16px;
     padding: 24px;
@@ -13,11 +17,21 @@
 .format-card:hover {
     transform: scale(1.05);
 }
+.format-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 .format-title {
     font-size: 24px;
     font-weight: 600;
+    color: var(--color-primary-light);
 }
 .format-text {
     font-size: 14px;
     font-weight: 300;
+    color: var(--color-primary-light);
 }
